@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.container-main {
+    display: flex;
+    gap: 15px;
+}
+
+.container-main__header {
+    width: 586px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-main .espiral {
+    width: 100px;
+    margin-top: 30px;  
+}
+
+.container-main__subtitle {
+    width: 100%;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 96px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.container-main__subtitle span {
+    color: #00ADB5;
+}
+
+.buttons {
+    width: 500px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons button{
+    all: unset;
+    border-radius: 24px;
+    font-size: 1.125rem;
+    padding: 10px 32px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    } 
+}
+
+#hireme {
+    background-color: #00ADB5;
+}
+
+#curriculo {
+    background-color: #393E46;
+}
+
+.container img {
+    width: 514px;
+}
