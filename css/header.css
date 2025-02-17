@@ -8,6 +8,14 @@
     padding: 48px 96px;
 }
 
+.nav h1 {
+    transition: all 1s;
+    
+    &:hover {
+        transform: scale(0.97);
+    }
+}
+
 .nav h1 a{
     color: #EEEEEE;
     font-family: "Oswald", serif;
