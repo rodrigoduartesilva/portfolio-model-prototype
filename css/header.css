@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 .nav{
     display: flex;
     justify-content: space-between;
@@ -8,20 +6,14 @@
     padding: 48px 96px;
 }
 
-.nav h1 {
+.nav img {
+    width: 180px;
+    height: 36px;
     transition: all 1s;
     
     &:hover {
-        transform: scale(0.97);
+        transform: scale(1.1);
     }
-}
-
-.nav h1 a{
-    color: #EEEEEE;
-    font-family: "Oswald", serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
 }
 
 .nav__list {
@@ -34,15 +26,25 @@
 }
 
 .nav__list a {
+    position: relative;
+    text-decoration: none;
     color: #EEEEEE;
     font-size: 1.125rem;
-    text-decoration: none;
+}
 
-    &:hover {
-        text-decoration: underline;
-    }
+.nav__list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #EEEEEE;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.6s ease-in-out;    
+}
 
-    &:focus {
-        text-decoration: underline;
-    }
+.nav__list a:hover::after, .nav__list a:focus::after {
+    transform: scaleX(1);
 }
