@@ -3,6 +3,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(57, 62, 70, 0.7);
     border-top: 1px solid #EEEEEE;
 }
 

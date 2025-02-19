@@ -1,4 +1,5 @@
 header {
+    width: 100%;
     border-bottom: 1px solid #EEEEEE;
 }
 
@@ -7,6 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background: rgba(57, 62, 70, 0.7);
     padding: 48px 96px;
 }
 
