@@ -1,3 +1,5 @@
+/*Main - Fim*/
+
 .container {
     height: 1024px;
     display: flex;
@@ -68,6 +70,8 @@
     width: 514px;
 }
 
+/*Main - Fim*/
+
 /*Sobre mim - Inicio*/
 
 .aboutme {
@@ -124,3 +128,88 @@
 }
 
 /*Sobre mim - Fim*/
+
+
+/*Works - Inicio*/
+
+.works {
+    height: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url('../src/img/background.png');
+    background-size: cover;
+    border-top: 1px solid #696060;
+}
+
+.works__title {
+    color: #EEEEEE;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.works__title span{
+    color: #00ADB5;
+}
+
+.works__buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.works__buttons button {
+    all: unset;
+    background-color: #393E46;
+    border-radius: 24px;
+    color: #EEEEEE;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 32px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
+
+.works__buttons .works__buttons--active {
+    background-color: #00ADB5;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.works__list {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.works__item {
+    width: 368px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(57, 62, 70, 0.5);
+    border-radius: 16px;
+}
+
+.works__item img {
+    height: 158px;
+    transition: all 1s;
+    opacity: 1;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/*Works - Fim*/
