@@ -219,6 +219,7 @@
 .contact {
     width: auto;
     height: 1024px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,13 +229,22 @@
     background-size: cover;
 }
 
+.contact__title, .contact__form {
+    width: 35%;
+    height: 500px;
+}
+
 .contact__title {
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .contact__title h2 {
-    font-size: 4rem;
+    color: #EEEEEE;
     font-weight: 700;
+    font-size: 4rem;
 }
 
 .contact__title span {
@@ -242,90 +252,75 @@
 }
 
 .contact__title img {
-    width: 454px;
-    
+    width: 100%;
 }
 
-.contact__form {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact__input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.contact__name, .contact__email, .contact__message {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 24px;
-}
-
-.contact__name input, .contact__email input{
-    all: unset;
-    width: 170px;
-    background-color: #393E46;
-    border-radius: 16px;
-    padding: 16px 256px 16px 24px;
-}
-
-label {
+.contact__form label{
     color: #EEEEEE;
     font-size: 1.125rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    
+}
+
+.contact__inputs, .contact__message{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__inputs {
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.contact__inputs input {
+    all: unset;
+    width: 90%;
+    background-color: #393E46;
+    border-radius: 16px;
+    padding: 16px 24px;
+    margin-top: 10px;
+}
+
+.contact__message {
+    bottom: 400px;
 }
 
 .contact__message textarea {
     all: unset;
-    width: 400px;
-    height: 250px;
+    width: 90%;
+    height: 200px;
     background-color: #393E46;
     border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 24px;
     padding: 16px 24px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
-
-#name::-webkit-input-placeholder, 
-#email::-webkit-input-placeholder,
-#mensagem::-webkit-input-placeholder{ 
-    font-size: 18px;
-    font-weight: 700;
-}
-
 
 .contact__message button {
     all: unset;
-    width: 240px;
+    width: 232px;
     height: 47px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     background-color: #00ADB5;
     border-radius: 24px;
-    color: #EEEEEE;
-    text-shadow: 0px 4px 4px #5e5c5c;
     font-size: 1.125rem;
     font-weight: 700;
-    margin-top: 24px;
+    text-shadow: 2px 2px 8px #000;
     padding: 10px 32px;
 
     &:hover {
         cursor: pointer;
-        background-color: rgba(0, 173, 181, 0.8);
+        opacity: 0.8;
     }
 }
 
-.contact__email img {
+.contact__message button img {
     width: 24px;
 }
 
