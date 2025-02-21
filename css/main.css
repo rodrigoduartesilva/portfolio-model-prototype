@@ -213,3 +213,120 @@
 }
 
 /*Works - Fim*/
+
+/*Contact page - Inicio*/
+
+.contact {
+    width: auto;
+    height: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+    background-image: url(../src/img/contact-page-bcg.png);
+    background-size: cover;
+}
+
+.contact__title {
+    width: 400px;
+}
+
+.contact__title h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.contact__title span {
+    color: #00ADB5;
+}
+
+.contact__title img {
+    width: 454px;
+    
+}
+
+.contact__form {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.contact__name, .contact__email, .contact__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.contact__name input, .contact__email input{
+    all: unset;
+    width: 170px;
+    background-color: #393E46;
+    border-radius: 16px;
+    padding: 16px 256px 16px 24px;
+}
+
+label {
+    color: #EEEEEE;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact__message textarea {
+    all: unset;
+    width: 400px;
+    height: 250px;
+    background-color: #393E46;
+    border-radius: 16px;
+    padding: 16px 24px;
+}
+
+#name::-webkit-input-placeholder, 
+#email::-webkit-input-placeholder,
+#mensagem::-webkit-input-placeholder{ 
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.contact__message button {
+    all: unset;
+    width: 240px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #00ADB5;
+    border-radius: 24px;
+    color: #EEEEEE;
+    text-shadow: 0px 4px 4px #5e5c5c;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 24px;
+    padding: 10px 32px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 173, 181, 0.8);
+    }
+}
+
+.contact__email img {
+    width: 24px;
+}
+
+/*Contact page - Fim*/
