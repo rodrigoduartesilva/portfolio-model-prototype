@@ -1,24 +1,41 @@
-# Protótipo de um modelo de portfólio (iTalents - Atividade 2)
+# Modelo de portfólio (iTalents - Atividade 3)
 
-## Enunciado
+Este é um projeto simples de portfólio desenvolvido utilizando apenas HTML e CSS. O objetivo é apresentar informações pessoais, projetos e formas de contato de maneira elegante e responsiva.
 
-Desenvolva um propotótipo de uma página web. 
+## 🔗 Link de Demonstração
 
-• Use tags semânticas.
-• Até este ponto, não estilizar.
+[https://rodrigoduartesilva.github.io/portfolio-model-prototype/](#)
 
-## Instalando a aplicação em seu computador
+## 🛠 Tecnologias Utilizadas
 
-Dentro do repositório você pode cloná-lo ou baixar o arquivo zip. Feito isso, execute direto o arquivo index.js.
+- HTML5
+- CSS3
 
-## Clonando o repositório
+## 📂 Estrutura do Projeto
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/rodrigoduartesilva/portfolio-model-prototype.git
+```
+/portfolio-model-prototype
+│-- /src
+│   │-- /img (Imagens utilizadas no site)
+│-- /css
+    |-- /arquivos .css
+│-- index.html (Arquivo principal do site)
+│-- README.md (Documentação)
 ```
 
+## ✨ Recursos Implementados
+
+- Layout responsivo para dispositivos com 375px de largura e Desktops 📱💻
+- Seções: Home, Sobre Mim e Contato 📝
+- Animações simples com CSS 🎨
+
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/rodrigoduartesilva/portfolio-model-prototype.git
+
+   ```
 2. Navegue até o diretório do projeto:
 
 ```bash
@@ -33,6 +50,21 @@ code .
 
 4. Use a extensão live server para rodar a aplicação no navegador.
 
-### Autor: Rodrigo Duarte
+## 📌 Personalização
 
-| [Linkedin](https://www.linkedin.com/in/rodrigoduar-te/) | [GitHub](https://github.com/rodrigoduartesilva/) | [Link do Repositório](https://github.com/rodrigoduartesilva/portfolio-model-prototype) |
+- Para modificar as cores e fontes, edite os arquivos de estilos .css.
+- Adicione seus projetos na seção de "Projetos" dentro do `index.html`.
+- Atualize suas informações pessoais na seção "Sobre Mim".
+
+## 📧 Contato
+
+Caso tenha alguma sugestão ou dúvida, entre em contato:
+
+- Email: rodrigoduartesilva@yahoo.com.br
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/rodrigoduar-te/)
+- GitHub: [Github](https://github.com/rodrigoduartesilva/)
+- Repositório: [Link do Repositório](https://github.com/rodrigoduartesilva/portfolio-model-prototype)
+---
+
+*Desenvolvido por Rodrigo Duarte*
+
