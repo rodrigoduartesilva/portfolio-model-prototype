@@ -66,8 +66,44 @@
     background-color: #393E46;
 }
 
-.container img {
+.container .container__main-img {
     width: 514px;
+}
+
+@media screen and (max-width: 375px){
+
+    .container, .container-main, .container-main__header {
+        width: 375px;
+    }
+
+    .container-main .espiral {
+        display: none;
+    }
+
+    .container-main__subtitle {
+        width: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 3.125rem;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 200px;
+        text-align: center;
+    }
+
+    .container .container__main-img {
+        width: 320px;
+    }
 }
 
 /*Main - Fim*/
@@ -79,7 +115,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 179px;
+    flex-wrap: wrap;
+    gap: 150px;
     border-top: 1px solid #696060;
 }
 
@@ -123,8 +160,38 @@
 }
 
 .aboutme__img {
-    width: 600px;
+    width: 500px;
     height: 500px;
+}
+
+@media screen and (max-width: 375px){
+
+    .aboutme {
+        gap: 0;
+    }
+
+    .aboutme__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .aboutme__text h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aboutmeu__espiral img {
+        display: none;
+    }
+
+    .aboutme__img {
+        width: 320px;
+        height: 300px;
+    }
 }
 
 /*Sobre mim - Fim*/
@@ -133,15 +200,17 @@
 /*Works - Inicio*/
 
 .works {
+    width: 100%;
     height: 1024px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     background-image: url('../src/img/background.png');
     background-size: cover;
     border-top: 1px solid #696060;
+    padding: 80px;
 }
 
 .works__title {
@@ -167,7 +236,7 @@
     background-color: #393E46;
     border-radius: 24px;
     color: #EEEEEE;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     padding: 10px 32px;
 
@@ -212,6 +281,46 @@
     }
 }
 
+@media screen and (max-width: 375px){
+
+    .works {
+        height: 100%;
+        padding: 64px 32px;
+    }
+
+    .works__title { 
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .works__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .works__buttons button {
+        width: 200px;
+        text-align: center;
+    }
+
+    .works__list {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .works__item {
+        width: 260px;
+        height: 210px;
+    }
+
+    .works__item img {
+        width: 230px;
+        height: 140px;
+    }
+}
+
 /*Works - Fim*/
 
 /*Contact page - Inicio*/
@@ -224,7 +333,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 200px;
+    gap: 180px;
     background-image: url(../src/img/contact-page-bcg.png);
     background-size: cover;
 }
@@ -322,6 +431,57 @@
 
 .contact__message button img {
     width: 24px;
+}
+
+@media screen and (max-width: 375px){
+
+    .contact {
+        height: 100%;
+        flex-direction: column;
+        gap: 90px;
+        padding: 80px 20px;
+    }
+
+    .contact__title {
+        align-items: center;
+    }
+
+    .contact__title h2 {
+        width: 250px;
+        font-size: 2rem;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .contact__title img {
+        width: 300px;
+    }
+
+    .contact__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact__name, .contact__email, .contact__message {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact__message button {
+        width: 150px;
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .contact__message button img {
+        display: none;
+    }
+
 }
 
 /*Contact page - Fim*/
